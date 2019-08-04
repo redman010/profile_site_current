@@ -1,0 +1,241 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html, body{
+    width: 100%;
+    height: 125%;
+    font-size: 14px;
+    font-weight: normal;
+    background-image: url(IMG_1456.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:  100% 100%;
+    position: relative; 
+    overflow-y: auto; 
+
+}
+.background{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    right:0; 
+}
+.nav a{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: verdana;
+    font-weight: bold;
+    height: 90px;
+    margin: 5px 0;
+    float: right;
+    background-color: black;
+    color: whitesmoke; 
+    line-height:  90px;
+    text-align: center;
+    transition: 300ms;
+}
+
+a .active, .nav a:hover{
+    background-color: rgb(78, 113, 189);
+    color: black;
+    width: 100%;
+}
+.a{
+  width: 55%;  
+}
+.b{
+    width: 55%;  
+}
+.c{
+    width: 55%;  
+}
+.d{
+    width: 55%;  
+}
+.F{
+    width: 55%;  
+}
+.content{
+    position: absolute;
+    width: 70%;
+    min-height: 500px;
+    height: auto;
+    left: 0;
+    top: 15%;
+}
+.home{
+    position: absolute;
+    left: 30px;
+    bottom: 80%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+.home h1{
+    font-size: 40px;
+    padding-right: 90px;
+    border-bottom: 1px solid white;
+}
+.home h3{
+    color: rgb(205, 232, 247);
+    font-size: 28px;
+    padding: 5px 0;
+    opacity: 0.89;
+}
+.about{
+    position: absolute;
+    bottom: -50px;
+    color:white;
+    text-size-adjust: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 0;
+    top: 10px;
+    left: 0%;
+    margin-left: 0;    
+    width: 80%;
+}
+.about h2{
+    color: rgb(59, 130, 223);
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+.about p{
+    border-style: outset;
+    font-size: 18px;
+    line-height: 28px;
+    background-color:  rgb(14, 117, 212);
+    opacity: 0.60;
+}
+.gallery p{
+    background-color:  rgb(14, 117, 212);
+    opacity: 0.60;
+}
+.gallery ul{
+    left: 0;
+    border-style: outset;
+    font-size: 18px;
+    margin-bottom: 15px;
+
+} 
+.gallery{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: white;
+    width: 80%;
+    display: none;
+    float: right;
+}
+.gallery img{
+    width: 100%;
+}
+
+/*below effects img of gallery and contact*/
+img{
+    height: 300px;
+    width: 300px;
+}
+.imagecontact{
+    float: left;
+    width: 50%;
+    padding: 5px;
+    margin-left:10%; 
+}
+.contact::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+ .inquiry{
+    color:white;
+    border-style: outset;
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    background-color:  rgb(14, 117, 212);
+    opacity: 0.60;
+    width: 80%;
+    
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  }
+
+
+    /* For tablets: */
+   @media only screen and (min-width: 600px) {
+    .a{
+        width: 55%;  
+      }
+      .b{
+          width: 65%;  
+      }
+      .c{
+          width: 70%;  
+      }
+      .d{
+          width: 70%;  
+      }
+      .F{
+          width: 70%;  
+      }
+      .home h1{
+        font-size: 60px;
+    }
+  .inquiry{
+    margin-left:10%; 
+    }
+
+  }
+
+
+/*only for large screen*/
+  @media only screen and (min-width: 768px) {
+    .a{
+        width: 55%;  
+      }
+      .b{
+          width: 65%;  
+      }
+      .c{
+          width: 70%;  
+      }
+      .d{
+          width: 78%;  
+      }
+      .F{
+          width: 50%;  
+      }
+      .home h1{
+        font-size: 60px;
+  }
+  .about {
+    margin-left:10%; 
+}
+
+.gallery{
+    padding: 0 60px;
+}
+
+  .imagecontact{
+    float: left;
+    width: 33%;
+    padding: 5px;
+    margin-left:0%; 
+}
+  .inquiry{
+    margin-left:10%; 
+    }
+
+}
+
+
