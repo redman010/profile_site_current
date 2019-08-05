@@ -35,7 +35,6 @@ $('.a').on('click', function(event){
     $inquiry.fadeOut();
     });
 
-
 $('.b').on('click', function(event){
     $home.fadeOut();
     $about.fadeIn();
