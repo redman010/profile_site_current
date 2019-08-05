@@ -13,7 +13,6 @@ html, body{
     background-size:  100% 100%;
     position: relative; 
     overflow-y: auto; 
-
 }
 .background{
     width: 100%;
@@ -28,7 +27,7 @@ html, body{
 }
 .nav a{
     text-decoration: none;
-    font-size: 28px;
+    font-size: 16px;
     font-family: verdana;
     font-weight: bold;
     height: 90px;
@@ -84,7 +83,7 @@ a .active, .nav a:hover{
 }
 .home h3{
     color: rgb(205, 232, 247);
-    font-size: 28px;
+    font-size: 20px;
     padding: 5px 0;
     opacity: 0.89;
 }
@@ -121,9 +120,8 @@ a .active, .nav a:hover{
 .gallery ul{
     left: 0;
     border-style: outset;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 15px;
-
 } 
 .gallery{
     position: absolute;
@@ -137,7 +135,6 @@ a .active, .nav a:hover{
 .gallery img{
     width: 100%;
 }
-
 /*below effects img of gallery and contact*/
 img{
     height: 300px;
@@ -154,10 +151,18 @@ img{
     clear: both;
     display: table;
 }
- .inquiry{
+.labels  .inquiry{
+font-size: 18px;
+font-style: bold; 
+     }
+
+ .rowTab .inquiry{
+font-size: 16px;
+     }     
+.inquiry{
     color:white;
     border-style: outset;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 28px;
     margin-bottom: 15px;
     background-color:  rgb(14, 117, 212);
@@ -165,12 +170,9 @@ img{
     width: 80%;
     
 }
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   }
-
-
     /* For tablets: */
    @media only screen and (min-width: 600px) {
     .a{
@@ -194,10 +196,7 @@ img{
   .inquiry{
     margin-left:10%; 
     }
-
   }
-
-
 /*only for large screen*/
   @media only screen and (min-width: 768px) {
     .a{
@@ -221,7 +220,6 @@ img{
   .about {
     margin-left:10%; 
 }
-
 .gallery{
     padding: 0 60px;
 }
@@ -235,7 +233,6 @@ img{
   .inquiry{
     margin-left:10%; 
     }
-
 }
 
 
