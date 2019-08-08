@@ -44,8 +44,8 @@ p{
 }
 
 a .active, .nav a:hover{
-    background-color: rgb(78, 113, 189);
-    color: black;
+    background-color: rgb(0, 32, 92);
+    color: rgb(111, 206, 230);
     width: 100%;
 }
 .a{
@@ -104,7 +104,7 @@ a .active, .nav a:hover{
     width: 80%;
 }
 .about h2{
-    color: rgb(59, 130, 223);
+    color: rgb(214, 240, 230);
     font-size: 25px;
     line-height: 28px;
     margin-bottom: 15px;
@@ -211,9 +211,9 @@ list-style: none;
     float: right;
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
   }
-
+*/
     /* For tablets: */
    @media only screen and (min-width: 600px) {
     html, body{
