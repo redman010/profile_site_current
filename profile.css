@@ -41,6 +41,7 @@ p{
     margin: 5px 0;
     float: right;
     background-color: black;
+    box-shadow: 0 9px #999;
     color: whitesmoke; 
     line-height:  90px;
     text-align: center;
@@ -190,6 +191,7 @@ a .active, .nav a:hover{
     margin-bottom: 15px;
     background-color:  rgb(14, 117, 212);
     width: 80%;
+    padding: 15px; 
 }
 .labels  .inquiry{
     font-size: 18px;
