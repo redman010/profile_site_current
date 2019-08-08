@@ -7,12 +7,15 @@ html, body{
     height: 125%;
     font-size: 14px;
     font-weight: normal;
-    background-image: url(IMG_1456.jpg);
+    background-image: url(https://i.pinimg.com/564x/5e/95/dc/5e95dc905346b90162454dcc0c7bbfc7.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:  100% 100%;
     position: relative; 
     overflow-y: auto; 
+}
+p{
+    font-size: 1.5em; 
 }
 .background{
     width: 100%;
@@ -139,11 +142,13 @@ a .active, .nav a:hover{
 .smallwidth{
     width:100%;
 }
+.heightmaker{
+    padding-bottom: 300px;
+}
 .imagecontact{
     float: left;
     width: 50%;
-    padding: 5px;
-    margin:10%; 
+    padding: 5px; 
 }
 .contact::after {
     content: "";
@@ -156,24 +161,65 @@ font-style: bold;
      }
 
  .rowTab .inquiry{
-font-size: 16px;
+font-size: 18px;
      }     
 .inquiry{
     color:white;
-    border-style: outset;
+    border-style: inset;
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 15px;
     background-color:  rgb(14, 117, 212);
     width: 80%;
-    
+}
+.listmaker{
+list-style: none;
+}
+
+.textAreSize{
+    height:100px;width:80%;
+}
+#form-outer{
+    border-style: outset;
+}
+.buttonForm{
+    border-style: outset;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(0, 32, 92);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;  
+}
+#submit:hover{
+    background-color: #3e8e41
+}
+#reset:hover{
+    background-color: #8f3131
+}
+.buttonForm:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#submit{
+    float: right;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   }
+
     /* For tablets: */
    @media only screen and (min-width: 600px) {
-    .a{
+    html, body{
+        background-image: url(IMG_1456.jpg);
+    }
+       .a{
         width: 55%;  
       }
       .b{
@@ -197,7 +243,10 @@ font-size: 16px;
   }
 /*only for large screen*/
   @media only screen and (min-width: 768px) {
-    .a{
+    html, body{
+        background-image: url(IMG_1456.jpg);
+    }
+        .a{
         width: 55%;  
       }
       .b{
