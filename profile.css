@@ -14,6 +14,10 @@ html, body{
     position: relative; 
     overflow-y: auto; 
 }
+h2{
+    color: rgb(79, 203, 235);
+    font-size: 25px;
+}
 p{
     font-size: 1.5em; 
 }
@@ -50,18 +54,23 @@ a .active, .nav a:hover{
 }
 .a{
   width: 55%;  
+  border-radius: 25px;
 }
 .b{
     width: 55%;  
+    border-radius: 25px;
 }
 .c{
     width: 55%;  
+    border-radius: 25px;
 }
 .d{
     width: 55%;  
+    border-radius: 25px;
 }
 .F{
     width: 55%;  
+    border-radius: 25px;
 }
 .content{
     position: absolute;
@@ -71,6 +80,7 @@ a .active, .nav a:hover{
     left: 0;
     top: 15%;
 }
+
 .home{
     position: absolute;
     left: 30px;
@@ -80,13 +90,13 @@ a .active, .nav a:hover{
     text-transform: uppercase;
 }
 .home h1{
+    width: 100%;
     font-size: 40px;
     padding-right: 90px;
     border-bottom: 1px solid white;
 }
-.home h3{
-    color: rgb(205, 232, 247);
-    font-size: 20px;
+.home h2{
+    color: rgb(163, 21, 21);
     padding: 5px 0;
     opacity: 0.89;
 }
@@ -104,21 +114,18 @@ a .active, .nav a:hover{
     width: 80%;
 }
 .about h2{
-    color: rgb(214, 240, 230);
     font-size: 25px;
     line-height: 28px;
     margin-bottom: 15px;
 }
 .about p{
-    border-style: outset;
-    font-size: 18px;
     line-height: 28px;
     background-color:  rgb(14, 117, 212);
-
+    border-style: outset;
+    font-size: 18px;
 }
 .gallery p{
     background-color:  rgb(0, 132, 255);
-
 }
 .gallery ul{
     left: 0;
@@ -138,7 +145,11 @@ a .active, .nav a:hover{
 .gallery img{
     width: 100%;
 }
-
+ .zoomer:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
 .smallwidth{
     width:100%;
 }
@@ -163,6 +174,10 @@ font-style: bold;
  .rowTab .inquiry{
 font-size: 18px;
      }     
+.inquiry h2{
+        color:white;
+        text-align: center;
+    }
 .inquiry{
     color:white;
     border-style: inset;
@@ -176,8 +191,15 @@ font-size: 18px;
 list-style: none;
 }
 
-.textAreSize{
-    height:100px;width:80%;
+.textAreaWrite{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
 }
 #form-outer{
     border-style: outset;
@@ -215,10 +237,8 @@ list-style: none;
   }
 */
     /* For tablets: */
-   @media only screen and (min-width: 600px) {
-    html, body{
-        background-image: url(IMG_1456.jpg);
-    }
+   @media only screen and (min-width: 680px) {
+
        .a{
         width: 55%;  
       }
@@ -235,6 +255,7 @@ list-style: none;
           width: 70%;  
       }
       .home h1{
+          color: white;
         font-size: 60px;
     }
   .inquiry{
@@ -264,6 +285,9 @@ list-style: none;
       .home h1{
         font-size: 60px;
   }
+  .home h2{
+    color: rgb(79, 203, 235);
+}
   .about {
     margin-left:10%; 
 }
