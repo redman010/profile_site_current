@@ -36,28 +36,24 @@ $('.a').on('click', function(event){
     });
 
 $('.b').on('click', function(event){
-    $home.fadeOut();
     $about.fadeIn();
     $gallery.fadeOut();
     $contact.fadeOut();
     $inquiry.fadeOut();
 });
 $('.c').on('click', function(event){
-    $home.fadeOut();
     $about.fadeOut();
     $gallery.fadeIn();
     $contact.fadeOut();
     $inquiry.fadeOut();
 });
 $('.d').on('click', function(event){
-    $home.fadeOut();
     $about.fadeOut();
     $gallery.fadeOut();
     $contact.fadeIn();
     $inquiry.fadeOut();
 });
 $('.F').on('click', function(event){
-    $home.fadeOut();
     $about.fadeOut();
     $gallery.fadeOut();
     $contact.fadeOut();

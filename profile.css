@@ -80,13 +80,14 @@ a .active, .nav a:hover{
     left: 0;
     top: 15%;
 }
-
 .home{
+    margin-top: 0%;
     position: absolute;
     left: 30px;
+    padding-bottom: 10%;
     bottom: 80%;
     color: white;
-
+    width: 100%;
     text-transform: uppercase;
 }
 .home h1{
@@ -94,6 +95,7 @@ a .active, .nav a:hover{
     font-size: 40px;
     padding-right: 90px;
     border-bottom: 1px solid white;
+    text-transform: capitalize;
 }
 .home h2{
     color: rgb(163, 21, 21);
@@ -109,19 +111,37 @@ a .active, .nav a:hover{
     padding: 0;
     top: 10px;
     left: 0%;
+    margin-top: 20%; 
     margin-left: 0;    
     width: 80%;
 }
+.aboutBoxer{
+    border-style: outset;
+}
 .about h2{
+    text-align: center;
     font-size: 25px;
     line-height: 28px;
     margin-bottom: 15px;
 }
+.aboutPop{
+    padding: 20px;
+    text-indent: 15%;
+}
 .about p{
     line-height: 28px;
     background-color:  rgb(14, 117, 212);
-    border-style: outset;
     font-size: 18px;
+}
+.gallery{
+    margin-top: 20%;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: white;
+    width: 80%;
+    display: none;
+    float: right;
 }
 .gallery p{
     background-color:  rgb(0, 132, 255);
@@ -132,15 +152,6 @@ a .active, .nav a:hover{
     font-size: 14px;
     margin-bottom: 15px;
 } 
-.gallery{
-    position: absolute;
-    left: 0;
-    top: 10px;
-    color: white;
-    width: 80%;
-    display: none;
-    float: right;
-}
 .gallery img{
     width: 100%;
 }
@@ -151,33 +162,27 @@ a .active, .nav a:hover{
   }
 .smallwidth{
     width:100%;
+    padding: 10px;
 }
 .heightmaker{
-    padding-bottom: 300px;
+    padding: 70px;
 }
 .imagecontact{
     float: left;
     width: 50%;
     padding: 5px; 
 }
+.contact{
+    margin-top: 20%;
+}
 .contact::after {
     content: "";
     clear: both;
     display: table;
 }
-.labels  .inquiry{
-font-size: 18px;
-font-style: bold; 
-     }
 
- .rowTab .inquiry{
-font-size: 18px;
-     }     
-.inquiry h2{
-        color:white;
-        text-align: center;
-    }
 .inquiry{
+    margin-top: 25%;
     color:white;
     border-style: inset;
     font-size: 20px;
@@ -185,6 +190,18 @@ font-size: 18px;
     margin-bottom: 15px;
     background-color:  rgb(14, 117, 212);
     width: 80%;
+}
+.labels  .inquiry{
+    font-size: 18px;
+    font-style: bold; 
+}
+
+.rowTab .inquiry{
+    font-size: 18px;
+}     
+.inquiry h2{
+    color:white;
+    text-align: center;
 }
 .listmaker{
 list-style: none;
@@ -262,9 +279,6 @@ list-style: none;
   }
 /*only for large screen*/
   @media only screen and (min-width: 768px) {
-    html, body{
-        background-image: url(IMG_1456.jpg);
-    }
         .a{
         width: 55%;  
       }
