@@ -135,10 +135,9 @@ a .active, .nav a:hover{
 .gallery img{
     width: 100%;
 }
-/*below effects img of gallery and contact*/
-img{
-    height: 300px;
-    width: 300px;
+
+.smallwidth{
+    width:100%;
 }
 .imagecontact{
     float: left;
