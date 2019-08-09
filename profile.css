@@ -16,7 +16,7 @@ html, body{
     overflow-y: auto; 
 }
 h2{
-    color: rgb(79, 203, 235);
+    color: rgb(75, 142, 230);
     font-size: 25px;
 }
 p{
@@ -74,6 +74,7 @@ a .active, .nav a:hover{
     border-radius: 25px;
 }
 .content{
+    top:10%;
     position: absolute;
     width: 70%;
     min-height: 500px;
@@ -82,15 +83,19 @@ a .active, .nav a:hover{
     top: 15%;
 }
 .home{
-    margin-top: 0%;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    padding-bottom:20%; 
+    width: 100%;
     left: 30px;
-    padding-bottom: 10%;
+
     bottom: 80%;
     color: white;
     width: 100%;
     text-transform: uppercase;
 }
+
+
 .home h1{
     width: 100%;
     font-size: 40px;
@@ -99,7 +104,6 @@ a .active, .nav a:hover{
     text-transform: capitalize;
 }
 .home h2{
-    color: rgb(163, 21, 21);
     padding: 5px 0;
     opacity: 0.89;
 }
@@ -120,7 +124,8 @@ a .active, .nav a:hover{
     border-style: outset;
 }
 .about h2{
-    text-align: center;
+    color: rgb(75, 142, 230);
+   text-align: center;
     font-size: 25px;
     line-height: 28px;
     margin-bottom: 15px;
@@ -174,7 +179,8 @@ a .active, .nav a:hover{
     padding: 5px; 
 }
 .contact{
-    margin-top: 20%;
+    padding-top:10%; 
+    top: 25px;
 }
 .contact::after {
     content: "";
@@ -183,6 +189,7 @@ a .active, .nav a:hover{
 }
 
 .inquiry{
+    top: 10px;
     margin-top: 25%;
     color:white;
     border-style: inset;
@@ -309,7 +316,7 @@ list-style: none;
     padding: 0 60px;
 }
 
-  .imagecontact{
+.imagecontact{
     float: left;
     width: 33%;
     padding: 5px;
