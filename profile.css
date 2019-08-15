@@ -16,11 +16,14 @@ html, body{
     overflow-y: auto; 
 }
 h2{
-    color: rgb(75, 142, 230);
+    color: rgb(58, 132, 228);
     font-size: 25px;
 }
 p{
     font-size: 1.5em; 
+}
+li{
+    list-style-type:none;
 }
 .background{
     width: 100%;
@@ -123,20 +126,32 @@ a .active, .nav a:hover{
     margin-left: 0;    
     width: 80%;
 }
-.aboutBoxer{
+/*tmk fix html*/
+p + p {
+    text-indent: 2em;
+   } 
+   .aboutlowerBoxer{
     border-style: outset;
+    border-top-style: none;
+    padding: 20px;
+    background-color: rgb(36, 116, 221);        
+   }
+.aboutBoxer{
+    text-indent: 2em;
+    border-style: outset;
+    border-bottom-style: none;
+    padding: 20px;
+    background-color: rgb(36, 116, 221); 
 }
 .about h2{
-    color: rgb(75, 142, 230);
+    color: rgb(36, 116, 221);
    text-align: center;
     font-size: 25px;
     line-height: 28px;
     margin-bottom: 15px;
 }
-.aboutPop{
-    padding: 20px;
-    text-indent: 15%;
-}
+/*tmk fix html*/
+
 .about p{
     line-height: 28px;
     background-color:  rgb(14, 117, 212);
@@ -165,13 +180,15 @@ a .active, .nav a:hover{
     width: 100%;
 }
  .zoomer:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
+    -ms-transform: scale(0.9); /* IE 9 */
+    -webkit-transform: scale(0.9); /* Safari 3-8 */
+    transform: scale(0.9); 
   }
+
 .smallwidth{
     width:100%;
     padding: 10px;
+    text-align: left;
 }
 
 .imagecontact{

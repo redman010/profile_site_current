@@ -23,22 +23,21 @@
         </div>
         <div class="about">
                 <h2>Bio</h2>      
-        <section class="aboutBoxer">
-            <p class="aboutPop">
-                My journey to becoming a software developer started from working with a small development company called luxury directory. From this exposure I had discovered my passion to work in this field. I have always been a quick learner, a stickler for details and have a passion for finding the answers needed. From that point in my life I had dedicated myself to developing my self into the professional I am today not only by self learning, and free resources but also with the guidance of my school Thinkful.
-            </p>
-            <p class="aboutPop">
+        <p class="aboutBoxer">
+            
+                 My journey to becoming a software developer started from working with a small development company called luxury directory. From this exposure I had discovered my passion to work in this field. I have always been a quick learner, a stickler for details and have a passion for finding the answers needed. From that point in my life I had dedicated myself to developing my self into the professional I am today not only by self learning, and free resources but also with the guidance of my school Thinkful.
+        </p>
+        <p class="aboutlowerBoxer">
                 As a Full stack Developer who was born and raised in New Yorker, I am very accustomed to a fast paced environment. I strongly believe in optimizing efficiency, working hard to accomplish goals and continuously improving myself. Along my journey of life, I have grown an interest in technology, Artwork, finding answers for puzzling conspects, and I love being a creative thinker. As a professional I am a great worker independently or in a group setting. Feel free to contact me anytime and browse my portfolio site projects using the links below. 
-            </p>
-        </section>  
+        </p>  
     </div>
     <div class="gallery">
         <ul>
             <li>
-            <title>question app</title>
-            <a href="https://redman010.github.io/shawn-quiz/"> <img class="zoomer" src="applicationEnding.png" alt="email logo"  class="smallwidth"></a>
+            <h3>question app</h3>
+            <a href="https://redman010.github.io/shawn-quiz/"> <img src="applicationEnding.png" alt="email logo"  class="zoomer"></a>
             <p>The picture above when click on will lead you to a live viewing 
-                of my project called Question app. Here is also a link to the <a href="https://github.com/redman010/shawn-quiz.git" height="402" width="402">github repository </a>
+                of my project called Question app. Here is also a link to the <a href="https://github.com/redman010/shawn-quiz.git">github repository </a>
             I hope you enjoy an example of my work. I have many more apps and website coming soon.</p>
             </li>       
             <!--
@@ -77,49 +76,50 @@
     <div id="form-outer">
 
         <form action="/action_page.php">
-    <!-- name -->
+    <!-- first name -->
     <div class="rowTab">
-        <div class="labels">
-            <label id="first-name-label" for="name">* first name: </label>
-        </div>
-        <div>
-            <input autofocus type="text" name="name" id="first-name" class="input-field" placeholder="Enter your name" required>
-        </div>
-        <div class="labels">
-            <label for="name">* Last Name: </label>
-        </div>
-        <div>
-            <input autofocus type="text" name="name" class="input-field" placeholder="Enter your name"required>
-        </div>
-    </div>
+            <div class="labels">
+                <label id="first-name-label" for="first-name">* first name: </label>
+            </div>
+            <div>
+                <input autofocus type="text" name="name" id="first-name" class="input-field" value="first-name" placeholder="Enter your name" required>
+            </div>
+                <!-- last name -->
+            <div class="labels">
+                    <label id="last-name-label" for="last-name">* last name: </label>
+                </div>
+                <div>
+                    <input type="text" name="name" id="last-name" class="input-field" value="last-name" placeholder="Enter your name" required>
+                </div>
+            </div>
     <!--email-->
     <div class="rowTab">
         <div class="labels">
-            <label id="email-label" for="email">* Email address: </label>
+            <label id="email-label" for="email">* last name: </label>
         </div>
         <div>
-            <input type="email" name="emailaddress" id="email" class="input-field" required placeholder="Enter your Email">
+            <input type="email" name="email" id="email" class="input-field" value="email" placeholder="Enter your Email">
         </div>
     </div>
     <!-- reference tracking -->
     <div class="rowTab">
         <div class="labels">
-            <label for="refferenced">how did you hear about me?</label>
+            <label>how did you hear about me?</label>
         </div>
         <div>
             <select name="refferenced" required>
                 <option value="">Select an option</option>
                 <option value="student">Educational program </option>
                 <option value="job">open soruce project-</option>
-                <option value="learner">google or other search engines</option>>
-                <option value="other">reffered by former/current client </option>
+                <option value="learner">google or other search engines</option>
+                <option value="other">reffered by former or current client </option>
             </select>
         </div>
     </div>
         <!-- price range -->
     <div class="rowTab">
     <div class="labels">
-        <label for="price_value">price range?</label>
+        <label>price range?</label>
     </div>
     <div>
         <select  name="price_value" required>
@@ -132,10 +132,10 @@
     </div>
     </div>
     <!-- services type -->
-    <div required>            
-        <fieldset required>
-    <span class="required">What services are you intresseted in</span>
-    <ul id="preferences" class="listmaker"placeholder="Enter your name" required>
+    <div>            
+    <fieldset>
+    <span class="required">What services are you interested in</span>
+    <ul class="listmaker">
             <li class="checkbox"><label><input value="0" type="checkbox">Full-stack web development</label></li>
             <li class="checkbox"><label><input value="1" type="checkbox">Back-end Projects </label></li>
             <li class="checkbox"><label><input value="3" type="checkbox">Front-end projects</label></li>
@@ -144,11 +144,11 @@
     </ul>
     </fieldset> 
     </div>
-        </div>
+
     <!--text for details-->                
         <div class="rowTab">
         <div class="labels">
-            <label for="details">Details of project</label>
+            <label>Details of project</label>
         </div>
         <div>
             <textarea  class="textAreaWrite" name="comment" placeholder="Enter your ideas here..." required></textarea>
