@@ -50,9 +50,12 @@ p{
 
 a .active, .nav a:hover{
     background-color: rgb(0, 32, 92);
+    text-align: right;
+    padding-right: 20%;
     color: rgb(111, 206, 230);
     width: 100%;
 }
+
 .a{
   width: 55%;  
   border-radius: 25px;
@@ -170,9 +173,7 @@ a .active, .nav a:hover{
     width:100%;
     padding: 10px;
 }
-.heightmaker{
-    padding: 70px;
-}
+
 .imagecontact{
     float: left;
     width: 50%;
@@ -285,6 +286,13 @@ list-style: none;
   .inquiry{
     margin-left:10%; 
     }
+    a .active, .nav a:hover{
+        background-color: rgb(0, 32, 92);
+        text-align: center;
+        padding-right: 0%;
+        color: rgb(111, 206, 230);
+        width: 100%;
+    }
   }
 /*only for large screen*/
   @media only screen and (min-width: 768px) {
@@ -324,6 +332,9 @@ list-style: none;
 }
 .contact{
     margin-left:10%;     
+}
+.heightmaker{
+    padding: 70px;
 }
   .inquiry{
     margin-left:10%; 
