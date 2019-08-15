@@ -35,8 +35,10 @@ li{
     position: absolute;
     top: 20%;
     right:0; 
+    
 }
 .nav a{
+    position: relative;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -47,8 +49,9 @@ li{
     box-shadow: 0 9px #999;
     color: whitesmoke; 
     line-height:  90px;
-    text-align: center;
     transition: 300ms;
+    text-align: right;
+    padding-right: 10%;
 }
 
 a .active, .nav a:hover{
@@ -64,6 +67,7 @@ a .active, .nav a:hover{
   border-radius: 25px;
 }
 .b{
+    text-align: right;
     width: 55%;  
     border-radius: 25px;
 }
@@ -94,14 +98,11 @@ a .active, .nav a:hover{
     padding-bottom:20%; 
     width: 100%;
     left: 30px;
-
     bottom: 80%;
     color: white;
     width: 100%;
     text-transform: uppercase;
 }
-
-
 .home h1{
     width: 100%;
     font-size: 40px;
@@ -122,11 +123,16 @@ a .active, .nav a:hover{
     padding: 0;
     top: 10px;
     left: 0%;
-    margin-top: 20%; 
+    margin-top: 50%; 
     margin-left: 0;    
     width: 80%;
 }
-/*tmk fix html*/
+.aboutMe{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(235, 241, 245);
+    background-color: rgb(36, 116, 221, 0.6); 
+}
 p + p {
     text-indent: 2em;
    } 
@@ -150,15 +156,14 @@ p + p {
     line-height: 28px;
     margin-bottom: 15px;
 }
-/*tmk fix html*/
 
 .about p{
     line-height: 28px;
     background-color:  rgb(14, 117, 212);
+    background-image: linear-gradient(rgb(14, 117, 212)10%, rgb(45, 88, 204) );
     font-size: 18px;
 }
 .gallery{
-    margin-top: 20%;
     position: absolute;
     left: 0;
     top: 10px;
@@ -166,14 +171,16 @@ p + p {
     width: 80%;
     display: none;
     float: right;
+    margin-top: 50%; 
 }
 .gallery p{
     background-color:  rgb(0, 132, 255);
 }
-.gallery ul{
+.gallery li{
     left: 0;
     border-style: outset;
-    font-size: 14px;
+/*font change for phone view*/
+    font-size: 24px;
     margin-bottom: 15px;
 } 
 .gallery img{
@@ -184,7 +191,7 @@ p + p {
     -webkit-transform: scale(0.9); /* Safari 3-8 */
     transform: scale(0.9); 
   }
-
+/* below effects contact img*/
 .smallwidth{
     width:100%;
     padding: 10px;
@@ -197,6 +204,7 @@ p + p {
     padding: 5px; 
 }
 .contact{
+    margin-top: 50%; 
     position: absolute;
     padding-top:10%; 
     top: 25px;
@@ -210,7 +218,6 @@ p + p {
 .inquiry{
     position: absolute;
     top: 10px;
-    margin-top: 25%;
     color:white;
     border-style: inset;
     font-size: 20px;
@@ -218,7 +225,11 @@ p + p {
     margin-bottom: 15px;
     background-color:  rgb(14, 117, 212);
     width: 80%;
-    padding: 15px; 
+    margin-top: 50%; 
+}
+
+.picker{
+    background-color: rgba(252, 252, 252, 0.6); 
 }
 .labels  .inquiry{
     font-size: 18px;
@@ -231,6 +242,7 @@ p + p {
 .inquiry h2{
     color:white;
     text-align: center;
+    background-color: rgba(252, 252, 252, 0.6); 
 }
 .listmaker{
 list-style: none;
@@ -280,7 +292,7 @@ list-style: none;
 /*@media only screen and (max-width: 600px) {
   }
 */
-    /* For tablets: */
+    /* the code below effects tablet sizes: */
    @media only screen and (min-width: 680px) {
 
        .a{
@@ -307,13 +319,18 @@ list-style: none;
     }
     a .active, .nav a:hover{
         background-color: rgb(0, 32, 92);
-        text-align: center;
-        padding-right: 0%;
+        text-align: right;
+        padding-right: 10%;
         color: rgb(111, 206, 230);
         width: 100%;
+
+    }
+    .nav a{
+        text-align: center;
+        padding-right: 0%;
     }
   }
-/*only for large screen*/
+/*the code below effects large screen sizess*/
   @media only screen and (min-width: 768px) {
         .a{
         width: 55%;  
@@ -336,12 +353,17 @@ list-style: none;
   .home h2{
     color: rgb(79, 203, 235);
 }
-  .about {
+.about{
+    margin-top: 20%; 
     margin-left:10%; 
 }
 .gallery{
+    margin-top: 20%; 
     padding: 0 60px;
 }
+.gallery ul{
+    font-size: 14px;
+} 
 
 .imagecontact{
     float: left;
@@ -350,13 +372,23 @@ list-style: none;
     margin-left:0%; 
 }
 .contact{
+    margin-top: 20%; 
     margin-left:10%;     
 }
-.heightmaker{
-    padding: 70px;
-}
   .inquiry{
+    margin-top: 20%; 
     margin-left:10%; 
+    }
+
+/* below effects contact img freelancer*/
+    .heightmaker{
+    padding-top: 70px;
+    
+    }
+
+    .nav a{
+        text-align: center;
+        padding-right: 0%;
     }
 }
 
